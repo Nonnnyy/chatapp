@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(231, 216, 228);
+}
+/* -------------- room.ejs -------------- */
+
+h1 {
+    text-align: center;
+    margin-top: 15px;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    text-indent: 10px;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    background-color: #1a2eda;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+.fields {
+    width: 100%;
+}
+
+.window {
+    margin: auto;
+    margin-top: 20px;
+    width: 700px;
+    height: 500px;
+    border: 2px solid #c2c6b6;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.chat-message {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+#output, #feedback {
+    margin-left: 10px;
+}
+
+.online {
+    height: 100vh;
+    width: 300px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgb(110, 103, 103);
+}
+
+.online .users-online {
+    background-color: rgb(110, 103, 103);
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.users {
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+.users p {
+    background-color: rgb(110, 103, 103);
+    color: white;
+}
+
+/* -------------- index.ejs -------------- */
+
+.content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content p {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.content input {
+    margin-bottom: 20px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+.content input[type="submit"] {
+    cursor: pointer;
+}
+
+::placeholder {
+    font-weight: 700;
+}
+
+.content div {
+    border: 2px solid black;
+    padding: 70px;
+    border-radius: 25px;
+}
+/* -------------- signup.ejs -------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    border: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(-45deg,#7f379b,#ffa26c);
+}
+
+.box{
+    width: 900px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 15px #00000033;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.design{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.design div:first-child{
+    width: 190px;
+    height: 90px;
+    border-radius: 50px;
+    background: linear-gradient(-90deg,#7f379b,#ff6a85);
+    transform: rotate(45deg);
+    position: absolute;
+    top: -40px;
+    left: 120px;
+}
+
+.design div:nth-child(2){
+    width: 450px;
+    height: 230px;
+    border-radius: 200px;
+    background: linear-gradient(-90deg,#7f379b,#ff6a85);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    left: -163px;
+    border: 25px solid #e2c4e0;
+}
+
+.design div:nth-child(3){
+    width: 190px;
+    height: 70px;
+    border-radius: 50px;
+    background: linear-gradient(-90deg,#7f379b,#ff92a6);
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: 70px;
+    left: -100px;
+}
+
+.design div:last-child{
+    width: 190px;
+    height: 70px;
+    border-radius: 50px;
+    background: linear-gradient(-90deg,#7f379b,#ffa26c);
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: -50px;
+    left: 100px;
+}
+
+.form{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 75px;
+}
+
+.form h2{
+    margin-bottom: 15px;
+}
+
+.input-field{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 1em;
+    color: #000;
+    background-color: #e2c4e0;
+    letter-spacing: 1px;
+}
+.input-field::placeholder{
+    color: #303030;
+}
+
+.btn{
+    width: 100%;
+    height: 40px;
+    background-color: #7f379b;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 1em;
+    margin-top: 15px;
+    border-radius: 5px;
+}
